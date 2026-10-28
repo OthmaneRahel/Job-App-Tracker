@@ -23,7 +23,7 @@ Application de suivi de candidatures d'emploi basée sur une **architecture micr
 
 ## 📐 Diagramme de classes
 
-![Diagramme de classes](diagramme-classes.jpeg)
+![Diagramme de classes](diagramme-classe.jpeg)
 
 > *Modèle de données des services et flux d'événements Kafka.*
 
