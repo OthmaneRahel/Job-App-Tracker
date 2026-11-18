@@ -10,27 +10,36 @@
         <module name="service-discovery" />
         <module name="service-gateway" />
       </profile>
-      <profile name="Annotation profile for service-candidatures" enabled="true">
+      <profile name="Annotation profile for service-notifications" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.48/lombok-1.18.48.jar" />
         </processorPath>
+        <module name="service-notifications" />
+      </profile>
+      <profile name="Annotation profile for service-utilisateurs" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.48/lombok-1.18.48.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.48/lombok-1.18.48.jar" />
+        </processorPath>
         <module name="service-statistiques" />
-        <module name="service-candidatures" />
         <module name="service-utilisateurs" />
+        <module name="service-candidatures" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="service-notifications" target="1.5" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="config-server" options="-parameters" />
       <module name="service-candidatures" options="-parameters" />
       <module name="service-discovery" options="-parameters" />
       <module name="service-gateway" options="-parameters" />
+      <module name="service-notifications" options="-parameters" />
       <module name="service-statistiques" options="-parameters" />
       <module name="service-utilisateurs" options="-parameters" />
     </option>

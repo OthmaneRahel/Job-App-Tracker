@@ -8,6 +8,7 @@
     <file url="file://$PROJECT_DIR$/job-tracker-app/service-candidatures/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/job-tracker-app/service-discovery/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/job-tracker-app/service-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/job-tracker-app/service-notifications/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/job-tracker-app/service-statistiques/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/job-tracker-app/service-utilisateurs/src/main/java" charset="UTF-8" />
   </component>
