@@ -39,7 +39,7 @@ L'interface d'administration RabbitMQ est accessible sur le port **http://localh
 
 Après la configuration du service d'envoi d'emails, nous avons testé l'API à l'aide de **Swagger UI** afin de vérifier le bon fonctionnement de l'envoi des messages vers le serveur SMTP Mailpit.
 
-job-tracker-app/test-swagger.png
+![Capture du Test Swagger](job-tracker-app/test-swagger.png)
 
 ### Dépendance Swagger utilisée
 
@@ -61,7 +61,7 @@ Lors de la création d'une candidature, un message est publié dans RabbitMQ afi
 
 Test de l'API de création d'une candidature :
 
-job-tracker-app/test-api.png
+![Capture du Test Api](job-tracker-app/test-api.png)
 
 ---
 
@@ -69,7 +69,7 @@ job-tracker-app/test-api.png
 
 Une fois la candidature créée, le message est envoyé à RabbitMQ puis consommé par le service de notification, qui génère et envoie un email de confirmation au candidat via Mailpit.
 
-job-tracker-app/candidature-cree.png
+![Capture d'une Candidature crée](job-tracker-app/candidature-cree.png)
 
 
 
