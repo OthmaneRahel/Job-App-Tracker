@@ -2,14 +2,21 @@ package jobtrackerapp.servicecandidatures.Service;
 
 import jobtrackerapp.servicecandidatures.Dto.CandidatureRequest;
 import jobtrackerapp.servicecandidatures.Dto.CandidatureResponse;
+import jobtrackerapp.servicecandidatures.Dto.NotificationPayload;
 import jobtrackerapp.servicecandidatures.Entity.ApplicationStatus;
 import jobtrackerapp.servicecandidatures.Entity.Candidature;
 import jobtrackerapp.servicecandidatures.Exception.ResourceNotFoundException;
 import jobtrackerapp.servicecandidatures.Repository.CandidatureRepository;
+import jobtrackerapp.servicecandidatures.enums.NotificationTypes;
+import jobtrackerapp.servicecandidatures.messaging.NotificationPublisher;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.transaction.support.TransactionSynchronization;
+import org.springframework.transaction.support.TransactionSynchronizationManager;
 
+import java.sql.Timestamp;
+import java.time.Instant;
 import java.util.List;
 
 @Service
@@ -18,12 +25,70 @@ import java.util.List;
 public class  CandidatureService {
 
     private final CandidatureRepository repository;
+    private final NotificationPublisher notificationPublisher;
 
 
+//    @Transactional
+//    public CandidatureResponse create(CandidatureRequest request) {
+//        Candidature c = new Candidature();
+//        applyRequest(c, request);
+//        Candidature saved = repository.save(c);
+//        NotificationPayload notificationPayload = new NotificationPayload(
+//                "rahelothmane@gmail.com",
+//                c.getId(),
+//                NotificationTypes.FOLLOW_UP,
+//                "Candidature crée",
+//                "Bonjour,votre candidature a été bien crée",
+//                false,
+//                Timestamp.from(Instant.now())
+//        );
+//
+//        System.out.println(notificationPayload.applicationId());
+//        afterCommit(()-> notificationPublisher.envoyerNotification_follow_up(notificationPayload));
+//        return toResponse(saved);
+//
+//    }
+
+
+    @Transactional
     public CandidatureResponse create(CandidatureRequest request) {
         Candidature c = new Candidature();
         applyRequest(c, request);
-        return toResponse(repository.save(c));
+        Candidature saved = repository.save(c);
+        afterCommit(() -> {
+            NotificationPayload notificationPayload = new NotificationPayload(
+                "rahelothmane@gmail.com",
+                c.getId(),
+                NotificationTypes.FOLLOW_UP,
+                "Candidature crée",
+                "Bonjour,votre candidature a été bien crée",
+                false,
+                Timestamp.from(Instant.now())
+        );
+            notificationPublisher.envoyerNotification_follow_up(
+                   notificationPayload
+            );
+        });
+
+        return toResponse(saved);
+    }
+
+
+
+    private void afterCommit(Runnable action) {
+        TransactionSynchronizationManager.registerSynchronization(
+                new TransactionSynchronization() {
+                    @Override
+                    public void afterCommit() {
+
+                        try {
+                            action.run();
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+        );
     }
 
 

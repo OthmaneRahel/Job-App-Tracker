@@ -36,7 +36,7 @@ public class CandidatureController {
             @Valid @RequestBody CandidatureRequest request) {
 
         if (idempotencyKey == null || idempotencyKey.isBlank()) {
-            return ResponseEntity.status(HttpStatus.CREATED).body(service.create(request));
+            throw new NullPointerException("idempotencyKey is null or empty");
         }
 
         CandidatureResponse response = idempotencyService.execute(
