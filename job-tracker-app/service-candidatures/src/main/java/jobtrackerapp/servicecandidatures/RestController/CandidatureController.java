@@ -23,16 +23,16 @@ public class CandidatureController {
     private final IdempotencyService idempotencyService;
 
 
-
-
 //    @PostMapping
 //    public ResponseEntity<CandidatureResponse> create(@Valid @RequestBody CandidatureRequest request) {
 //        return ResponseEntity.status(HttpStatus.CREATED).body(service.create(request));
 //    }
 
+
     @PostMapping
     public ResponseEntity<CandidatureResponse> create(
             @RequestHeader(value = "Idempotency-Key") String idempotencyKey,
+            @RequestHeader(value = "Authorization", required = false) String authorization,
             @Valid @RequestBody CandidatureRequest request) {
 
         if (idempotencyKey == null || idempotencyKey.isBlank()) {
@@ -43,9 +43,10 @@ public class CandidatureController {
                 idempotencyKey,
                 "candidature:create:" + request.userId(),
                 request,
-                () -> service.create(request),
+                () -> service.create(request, authorization),
                 CandidatureResponse.class
         );
+
 
         return ResponseEntity.status(HttpStatus.CREATED).body(response);
     }

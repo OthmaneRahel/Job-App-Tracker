@@ -1,5 +1,6 @@
 package jobtrackerapp.serviceutilisateurs.service;
 
+import jobtrackerapp.servicecandidatures.Exception.ResourceNotFoundException;
 import jobtrackerapp.serviceutilisateurs.dto.RegisterRequest;
 import jobtrackerapp.serviceutilisateurs.dto.UserResponseDto;
 import jobtrackerapp.serviceutilisateurs.entity.User;
@@ -44,6 +45,13 @@ public class UserService {
         return userRepository.findByKeycloakId(keycloakId)
                 .map(this::toDto)
                 .orElseThrow(() -> new UserNotFoundException("Profil introuvable"));
+    }
+
+    // UserService
+    public UserResponseDto findById(Long id) {
+        return userRepository.findById(id)
+                .map(this::toDto) // ton mapper existant
+                .orElseThrow(() -> new ResourceNotFoundException("Utilisateur introuvable : " + id));
     }
 
     private UserResponseDto toDto(User u) {

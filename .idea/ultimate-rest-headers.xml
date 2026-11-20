@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="UltimateRestHeaderStore">
+    <option name="customHeaders">
+      <set>
+        <option value="Idempotency-Key" />
+      </set>
+    </option>
+  </component>
+</project>
