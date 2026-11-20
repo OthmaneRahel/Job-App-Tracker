@@ -1,0 +1,991 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="UltimateRestHistory">
+    <items>
+      <historyItem>
+        <option name="timestamp" value="1795194236570" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;innova&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="hiba10" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795193947317" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;innova&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="hiba9" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795193946555" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;innova&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="hiba9" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795193946329" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;innova&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="hiba9" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795193940310" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;innova&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="hiba8" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795193935750" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;innova&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="hiba7" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795193935525" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;innova&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="hiba7" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795193934799" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;innova&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="hiba7" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795193934567" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;innova&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="hiba7" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795193680225" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;innova&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="hiba6" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795193680001" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;innova&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="hiba6" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795193679603" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;innova&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="hiba6" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795193673839" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;innova&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="hiba5" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795193672809" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;innova&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="hiba5" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795193548806" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;innova&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="hiba5" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795193544507" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;innova&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="hiba4" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795193540272" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;innova&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="hiba3" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795193535354" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;innova&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="hiba2" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795193530778" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;innova&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="hiba1" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795193525337" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;innova&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="hiba" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795193525109" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;innova&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="hiba" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795193524900" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;innova&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="hiba" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795193524619" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;innova&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="hiba" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795193524391" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;innova&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="hiba" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795193524152" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;innova&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="hiba" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795193523862" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;innova&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="hiba" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795193523629" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;innova&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="hiba" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795193523398" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;innova&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="hiba" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795193523187" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;innova&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="hiba" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795193522964" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;innova&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="hiba" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795193522742" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;innova&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="hiba" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795193522521" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;innova&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="hiba" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795193522295" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;innova&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="hiba" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795193522092" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;innova&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="hiba" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795193521868" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;innova&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="hiba" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795193521638" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;innova&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="hiba" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795193207140" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;innova&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="hiba" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795193078293" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;test&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="hiba" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795192303079" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;test&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="key1234" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795192252940" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;test&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="key1234" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795192248319" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 2,
+  &quot;companyName&quot; : &quot;test&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="key1234" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795192243499" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 999,
+  &quot;companyName&quot; : &quot;test&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="key1234" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795192210327" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 1,
+  &quot;companyName&quot; : &quot;test&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="key1234" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795192061227" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 1,
+  &quot;companyName&quot; : &quot;test&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="key1234" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795191984271" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 1,
+  &quot;companyName&quot; : &quot;test&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="key1234" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795191839667" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 1,
+  &quot;companyName&quot; : &quot;test&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="key1234" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795188456454" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 1,
+  &quot;companyName&quot; : &quot;test&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="key1234" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795188434150" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 1,
+  &quot;companyName&quot; : &quot;example&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="key123" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795188291554" />
+        <request method="POST" url="http://localhost:8083/api/candidatures">
+          <bodyContent>{
+  &quot;userId&quot; : 1,
+  &quot;companyName&quot; : &quot;example&quot;,
+  &quot;jobTitle&quot; : &quot;Example title&quot;,
+  &quot;jobUrl&quot; : &quot;https://example.com&quot;,
+  &quot;location&quot; : &quot;example&quot;,
+  &quot;employmentType&quot; : &quot;example&quot;,
+  &quot;status&quot; : &quot;SENT&quot;,
+  &quot;appliedAt&quot; : &quot;2026-01-01&quot;,
+  &quot;nextFollowUpDate&quot; : &quot;2026-01-01&quot;
+}</bodyContent>
+          <headers>
+            <param name="Idempotency-Key" value="key123" type="HEADER" dataType="String" />
+            <param name="Authorization" value="restpilot-secret:5ca280aa-d2fc-4f12-b8dc-7e317b9dfbe1" type="HEADER" dataType="String" enabled="false" />
+          </headers>
+        </request>
+      </historyItem>
+      <historyItem>
+        <option name="timestamp" value="1795188022525" />
+        <request url="http://localhost:8082/api/users/2" bodyType="none" />
+      </historyItem>
+    </items>
+  </component>
+</project>

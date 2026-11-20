@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="UltimateRestApiCache">
+    <cachedApis>
+      <api method="POST" url="/api/auth/register" className="jobtrackerapp.serviceutilisateurs.controller.AuthController" methodName="register" moduleName="service-utilisateurs" bodyType="raw (json)" methodSignature="register(jobtrackerapp.serviceutilisateurs.dto.RegisterRequest)" />
+      <api method="POST" url="/api/auth/login" className="jobtrackerapp.serviceutilisateurs.controller.AuthController" methodName="login" moduleName="service-utilisateurs" bodyType="raw (json)" methodSignature="login(jobtrackerapp.serviceutilisateurs.dto.LoginRequest)" />
+      <api method="GET" url="/api/users/me" className="jobtrackerapp.serviceutilisateurs.controller.AuthController" methodName="me" moduleName="service-utilisateurs" bodyType="none" methodSignature="me(org.springframework.security.oauth2.jwt.Jwt)" />
+      <api method="POST" url="/api/candidatures" className="jobtrackerapp.servicecandidatures.RestController.CandidatureController" methodName="create" moduleName="service-candidatures" bodyType="raw (json)" methodSignature="create(java.lang.String,java.lang.String,jobtrackerapp.servicecandidatures.Dto.CandidatureRequest)" />
+      <api method="GET" url="/api/candidatures/{id}" className="jobtrackerapp.servicecandidatures.RestController.CandidatureController" methodName="getById" moduleName="service-candidatures" bodyType="none" methodSignature="getById(java.lang.Long)" />
+      <api method="GET" url="/api/candidatures" className="jobtrackerapp.servicecandidatures.RestController.CandidatureController" methodName="getAll" moduleName="service-candidatures" bodyType="none" methodSignature="getAll(java.lang.Long,jobtrackerapp.servicecandidatures.Entity.ApplicationStatus)" />
+      <api method="PUT" url="/api/candidatures/{id}" className="jobtrackerapp.servicecandidatures.RestController.CandidatureController" methodName="update" moduleName="service-candidatures" bodyType="raw (json)" methodSignature="update(java.lang.Long,jobtrackerapp.servicecandidatures.Dto.CandidatureRequest)" />
+      <api method="DELETE" url="/api/candidatures/{id}" className="jobtrackerapp.servicecandidatures.RestController.CandidatureController" methodName="delete" moduleName="service-candidatures" bodyType="none" methodSignature="delete(java.lang.Long)" />
+      <api method="GET" url="/api/users/{id}" className="jobtrackerapp.serviceutilisateurs.controller.UserController" methodName="getById" moduleName="service-utilisateurs" bodyType="none" methodSignature="getById(java.lang.Long)" />
+      <api method="POST" url="/notification/new-notification" className="jobtrackerapp.servicenotifications.controllers.NotificationController" methodName="envoyerNotification" moduleName="service-notifications" bodyType="raw (json)" methodSignature="envoyerNotification(jobtrackerapp.servicenotifications.dto.NotificationPayload)" />
+    </cachedApis>
+  </component>
+</project>
