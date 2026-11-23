@@ -3,7 +3,7 @@ package jobtrackerapp.servicecandidatures.RestController;
 
 import jobtrackerapp.servicecandidatures.Dto.CandidatureRequest;
 import jobtrackerapp.servicecandidatures.Dto.CandidatureResponse;
-import jobtrackerapp.servicecandidatures.Entity.ApplicationStatus;
+import jobtrackerapp.servicecandidatures.enums.ApplicationStatus;
 import jobtrackerapp.servicecandidatures.Service.CandidatureService;
 import jobtrackerapp.servicecandidatures.Service.IdempotencyService;
 import jakarta.validation.Valid;

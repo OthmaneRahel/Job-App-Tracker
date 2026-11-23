@@ -1,4 +1,4 @@
-package jobtrackerapp.servicecandidatures.Entity;
+package jobtrackerapp.servicecandidatures.enums;
 
 public enum ApplicationStatus {
     SENT, INTERVIEW, REJECTED, ACCEPTED
