@@ -4,7 +4,8 @@ import jobtrackerapp.servicecandidatures.Dto.CandidatureRequest;
 import jobtrackerapp.servicecandidatures.Dto.CandidatureResponse;
 import jobtrackerapp.servicecandidatures.Dto.NotificationPayload;
 import jobtrackerapp.servicecandidatures.Dto.UserResponseDto;
-import jobtrackerapp.servicecandidatures.Entity.ApplicationStatus;
+import jobtrackerapp.servicecandidatures.FeignClient.RequestUser;
+import jobtrackerapp.servicecandidatures.enums.ApplicationStatus;
 import jobtrackerapp.servicecandidatures.Entity.Candidature;
 import jobtrackerapp.servicecandidatures.Exception.ResourceNotFoundException;
 import jobtrackerapp.servicecandidatures.FeignClient.UtilisateurClient;
@@ -12,6 +13,7 @@ import jobtrackerapp.servicecandidatures.Repository.CandidatureRepository;
 import jobtrackerapp.servicecandidatures.enums.NotificationTypes;
 import jobtrackerapp.servicecandidatures.messaging.NotificationPublisher;
 import lombok.RequiredArgsConstructor;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.support.TransactionSynchronization;
@@ -28,7 +30,8 @@ public class  CandidatureService {
 
     private final CandidatureRepository repository;
     private final NotificationPublisher notificationPublisher;
-    private final UtilisateurClient utilisateurClient;
+    private final RequestUser requestUser;
+
 
 
 //    @Transactional
@@ -79,7 +82,8 @@ public class  CandidatureService {
 
     @Transactional
     public CandidatureResponse create(CandidatureRequest request,  String authorization) {
-        UserResponseDto user = utilisateurClient.getUserById(request.userId(), authorization);
+
+        UserResponseDto user = requestUser.getUserWithCache(request.userId(), authorization);
 
         Candidature c = new Candidature();
         applyRequest(c, request);
@@ -87,12 +91,12 @@ public class  CandidatureService {
 
         afterCommit(() -> {
             NotificationPayload notificationPayload = new NotificationPayload(
-//                    user.email(),
-                    "rahelothmane@gmail.com",
+                    user.email(),
+                    //"rahelothmane@gmail.com",
                     c.getId(),
                     NotificationTypes.FOLLOW_UP,
                     "Candidature crée",
-                    "Bonjour " + user.prenom() + ", votre candidature a été bien crée",
+                    "Bonjour " + user.prenom() + ", votre candidature dans le post " + c.getJobTitle() + " dans l\' entreprise " + c.getCompanyName() + " a été bien crée",
                     false,
                     Timestamp.from(Instant.now())
             );
@@ -108,7 +112,6 @@ public class  CandidatureService {
                 new TransactionSynchronization() {
                     @Override
                     public void afterCommit() {
-
                         try {
                             action.run();
                         } catch (Exception e) {
@@ -121,6 +124,7 @@ public class  CandidatureService {
 
 
     @Transactional(readOnly = true)
+    @Cacheable(value = "candidature",key = "#id")
     public CandidatureResponse getById(Long id) {
         return toResponse(findOrThrow(id));
     }

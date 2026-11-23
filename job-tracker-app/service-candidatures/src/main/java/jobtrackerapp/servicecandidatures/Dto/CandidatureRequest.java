@@ -1,6 +1,6 @@
 package jobtrackerapp.servicecandidatures.Dto;
 
-import jobtrackerapp.servicecandidatures.Entity.ApplicationStatus;
+import jobtrackerapp.servicecandidatures.enums.ApplicationStatus;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 

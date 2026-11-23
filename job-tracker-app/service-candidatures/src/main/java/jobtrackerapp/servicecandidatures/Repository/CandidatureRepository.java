@@ -1,6 +1,6 @@
 package jobtrackerapp.servicecandidatures.Repository;
 
-import jobtrackerapp.servicecandidatures.Entity.ApplicationStatus;
+import jobtrackerapp.servicecandidatures.enums.ApplicationStatus;
 import jobtrackerapp.servicecandidatures.Entity.Candidature;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

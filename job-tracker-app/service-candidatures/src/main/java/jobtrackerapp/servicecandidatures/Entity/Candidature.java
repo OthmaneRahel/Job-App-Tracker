@@ -1,6 +1,7 @@
 package jobtrackerapp.servicecandidatures.Entity;
 
 import jakarta.persistence.*;
+import jobtrackerapp.servicecandidatures.enums.ApplicationStatus;
 import lombok.*;
 
 import java.time.LocalDate;

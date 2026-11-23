@@ -1,6 +1,6 @@
 package jobtrackerapp.servicecandidatures.Dto;
 
-import jobtrackerapp.servicecandidatures.Entity.ApplicationStatus;
+import jobtrackerapp.servicecandidatures.enums.ApplicationStatus;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;

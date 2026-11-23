@@ -1,5 +1,6 @@
 package jobtrackerapp.servicecandidatures.FeignClient;
 
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import jobtrackerapp.servicecandidatures.Dto.UserResponseDto;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestHeader;
 )
 public interface UtilisateurClient {
 
+    @CircuitBreaker(name = "utilisateur-circuit")
     @GetMapping("/api/users/{id}")
     UserResponseDto getUserById(@PathVariable("id") Long id,
                                 @RequestHeader(value = "Authorization", required = false) String authorization);
