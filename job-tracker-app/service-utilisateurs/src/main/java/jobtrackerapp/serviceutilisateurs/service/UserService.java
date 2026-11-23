@@ -1,14 +1,23 @@
 package jobtrackerapp.serviceutilisateurs.service;
 
 import jobtrackerapp.servicecandidatures.Exception.ResourceNotFoundException;
+import jobtrackerapp.serviceutilisateurs.dto.LoginRequest;
 import jobtrackerapp.serviceutilisateurs.dto.RegisterRequest;
 import jobtrackerapp.serviceutilisateurs.dto.UserResponseDto;
+import jobtrackerapp.serviceutilisateurs.dto.UserSession;
 import jobtrackerapp.serviceutilisateurs.entity.User;
 import jobtrackerapp.serviceutilisateurs.exception.EmailAlreadyExistsException;
 import jobtrackerapp.serviceutilisateurs.exception.UserNotFoundException;
 import jobtrackerapp.serviceutilisateurs.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.oauth2.jwt.Jwt;
+import org.springframework.security.oauth2.jwt.JwtDecoder;
 import org.springframework.stereotype.Service;
+
+import java.time.Duration;
+import java.time.Instant;
+import java.util.Collection;
+import java.util.Map;
 
 @Service
 @RequiredArgsConstructor
@@ -16,6 +25,8 @@ public class UserService {
 
     private final UserRepository userRepository;
     private final KeycloakService keycloakService;
+    private final SessionService sessionService;
+    private final JwtDecoder jwtDecoder;
 
     public UserResponseDto register(RegisterRequest dto) {
         if (userRepository.existsByEmail(dto.email())) {
@@ -57,5 +68,45 @@ public class UserService {
     private UserResponseDto toDto(User u) {
         return new UserResponseDto(u.getId(), u.getNom(), u.getPrenom(),
                 u.getEmail(), u.getCreatedAt(), u.getUpdatedAt());
+    }
+
+    public Map<String, Object> login(LoginRequest req) {
+        // 1. Keycloak vérifie email + mot de passe et renvoie les tokens
+        Map<String, Object> tokens = keycloakService.login(req);
+
+        // 2. On lit le JWT pour récupérer le sub et les rôles
+        Jwt jwt = jwtDecoder.decode((String) tokens.get("access_token"));
+        String keycloakId = jwt.getSubject();
+
+        // 3. Profil depuis la base
+        User user = userRepository.findByKeycloakId(keycloakId)
+                .orElseThrow(() -> new UserNotFoundException("Profil introuvable"));
+
+        // 4. Rôles Keycloak
+        Map<String, Object> realmAccess = jwt.getClaim("realm_access");
+        String roles = realmAccess == null ? "" :
+                String.join(",", (Collection<String>) realmAccess.get("roles"));
+
+        // 5. TTL = durée de la session Keycloak (refresh token)
+        long seconds = ((Number) tokens.get("refresh_expires_in")).longValue();
+
+        sessionService.save(new UserSession(
+                        user.getId(), keycloakId, user.getNom(), user.getPrenom(),
+                        user.getEmail(), roles, Instant.now().toString()),
+                Duration.ofSeconds(seconds));
+
+        return tokens;
+    }
+
+    public UserSession getSession(String keycloakId) {
+        return sessionService.find(keycloakId).orElseGet(() -> {
+            // Pas dans Redis (expiré, ou Redis vidé) : on recharge depuis la base
+            User u = userRepository.findByKeycloakId(keycloakId)
+                    .orElseThrow(() -> new UserNotFoundException("Profil introuvable"));
+            UserSession s = new UserSession(u.getId(), keycloakId, u.getNom(),
+                    u.getPrenom(), u.getEmail(), "", Instant.now().toString());
+            sessionService.save(s, Duration.ofMinutes(30));
+            return s;
+        });
     }
 }

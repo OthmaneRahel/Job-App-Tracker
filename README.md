@@ -137,3 +137,15 @@ Application de suivi de candidatures d'emploi basée sur une **architecture micr
 Angular · Spring Cloud Gateway · Spring Boot · JWT · Spring Cloud Config · Eureka · Apache Kafka · PostgreSQL · MongoDB
 
 ---
+
+
+
+## Pour Redis : 
+
+docker run -d --name redis -p 6379:6379 redis
+
+ dans pom:
+ <dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-redis</artifactId>
+</dependency>

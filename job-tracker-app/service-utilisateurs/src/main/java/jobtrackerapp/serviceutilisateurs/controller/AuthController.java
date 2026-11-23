@@ -4,6 +4,7 @@ import jakarta.validation.Valid;
 import jobtrackerapp.serviceutilisateurs.dto.LoginRequest;
 import jobtrackerapp.serviceutilisateurs.dto.RegisterRequest;
 import jobtrackerapp.serviceutilisateurs.dto.UserResponseDto;
+import jobtrackerapp.serviceutilisateurs.dto.UserSession;
 import jobtrackerapp.serviceutilisateurs.service.KeycloakService;
 import jobtrackerapp.serviceutilisateurs.service.UserService;
 import lombok.RequiredArgsConstructor;
@@ -30,13 +31,18 @@ public class AuthController {
 
     @PostMapping("/auth/login")
     public Map<String, Object> login(@Valid @RequestBody LoginRequest request) {
-        return keycloakService.login(request);
+        return userService.login(request);
     }
 
-    // Route protégée : nécessite un JWT valide
+//    // Route protégée : nécessite un JWT valide
+//    @GetMapping("/users/me")
+//    public UserResponseDto me(@AuthenticationPrincipal Jwt jwt) {
+//        return userService.findByKeycloakId(jwt.getSubject());
+//    }
+
     @GetMapping("/users/me")
-    public UserResponseDto me(@AuthenticationPrincipal Jwt jwt) {
-        return userService.findByKeycloakId(jwt.getSubject());
+    public UserSession me(@AuthenticationPrincipal Jwt jwt) {
+        return userService.getSession(jwt.getSubject());
     }
 
 
